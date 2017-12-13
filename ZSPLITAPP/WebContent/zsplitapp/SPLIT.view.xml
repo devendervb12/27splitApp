@@ -1,0 +1,51 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zsplitapp.SPLIT"
+		xmlns:f="sap.ui.layout.form"
+		 xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<SplitApp>
+	    <masterPages>
+	    
+	      <Page title="Page1">
+	             <content>
+	                 <Text text="UI5 made things simple"/>
+	             </content>
+	          </Page>
+	          <Page title="Page2">
+	             <content>
+	                 <Text text="UI5 made things simple"/>
+	             </content>
+	          </Page>
+	          
+	          <Page title="Page3">
+	             <content>
+	                 <Text text="UI5 made things simple"/>
+	             </content>
+	          </Page>
+	          
+	    </masterPages>
+	    
+	    <detailPages>
+	          <Page title="Detail Page">
+	             <content>
+	                <f:SimpleForm>      
+	            <f:title>
+	                <core:Title text="Please Enter Employee Details"/>
+	            </f:title>          
+	            <f:content>
+	                 <Label text="Employee Name"/>
+	                 <Input/>
+	                 <Label text="Department"/>
+	                 <ComboBox>
+	                    <items>
+	                       <core:Item text="SAP"/>
+	                       <core:Item text="Oracle"/>
+	                    </items>
+	                 </ComboBox>
+	            </f:content>	            
+	          </f:SimpleForm>
+	             </content>
+	          </Page>
+	    </detailPages>
+	</SplitApp>
+</core:View>
